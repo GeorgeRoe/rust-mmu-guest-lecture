@@ -645,4 +645,6 @@ class: text-center
 
 Any Questions?
 
-![Slides repo](https://opengraph.githubassets.com/1/georgeroe/rust-mmu-guest-lecture){.h-[15vh]}
+![Slides repo](https://opengraph.githubassets.com/1/georgeroe/rust-mmu-guest-lecture){.h-[15vh].mx-auto}
+
+https://georgeroe.github.io/rust-mmu-guest-lecture
