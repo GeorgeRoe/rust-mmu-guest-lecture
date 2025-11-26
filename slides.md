@@ -12,9 +12,11 @@ layout: cover
 hideInToc: true
 ---
 
+![Ferris the rustacean](https://rustacean.net/assets/rustacean-flat-noshadow.svg){.h-[20vh].mx-auto}
+
 # Rust
 
-George Roe - STFC
+George Roe, STFC, 2025-11-28
 
 ---
 layout: center
@@ -42,6 +44,7 @@ layout: center
   - DL - Daresbury Laboratory (Warrington)
   - RAL - Rutherford Appleton Laboratory (Near Oxford)
 - Focused on producing open access science by funding research grants
+- Very large [Graduate Scheme](https://stfccareers.co.uk/graduates/), in which grads are rotated around 4 projects over the course of 2 years at around £35,000
 
 ---
 
@@ -49,11 +52,14 @@ layout: center
 
 How come I use rust?
 
-I have been working on a CLI project for HPC systems: Essentially there is little to no carbon footprinting for jobs you have submitted to an HPC, and if there is, it is usually vendor specific/managed by admins. My goal was to make a portable script that can keep a log of your carbon emissions over time and provide reports.
+GUILT - Green Usage Impact Logging Tool:
 
-I originally built this using python, but after getting past the stage of "this is just a small script" (mainly when the project started to be managed properly under the energy efficiency team) I started to be conscious of the fact that any part of my program can just throw an unchecked exception and there isn't much I can do about it. I was halfway through writing a small monad implementation for the project when I decided to make the leap.
+- CLI for HPC carbon emissions tracking
+- There is little to no tracking for jobs you have submitted to a supercomputer
+- Any tracking is usually managed by admins, give users the ability to make the change themselves
+- Portable and works on any machine
 
-![GUILT repo](https://opengraph.githubassets.com/1/georgeroe/GUILT){.h-[15vh]}
+![GUILT repo](https://opengraph.githubassets.com/1/georgeroe/GUILT){.h-[20vh]}
 
 ---
 
