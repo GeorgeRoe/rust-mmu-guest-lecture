@@ -63,6 +63,16 @@ GUILT - Green Usage Impact Logging Tool:
 
 ---
 
+# Why did I pick rust?
+
+- There are several different python versions you will find installed on HPCs, to make sure I was compatible I had to use an older version
+- Since the software needs to be portable, practically nothing can be taken for granted, which rust handles well
+- Distribution of a single binary is a lot easier than getting people to pip install
+- HPC login nodes should preferrably not have any large amount of work done on them, rust will reduce users impact on login node resources
+- I would rather catch errors with my code at compile time, rather than having my GitHub flooded with issues users found at runtime
+
+---
+
 ## About this talk
 
 Given the popularity of Java with universities, I assume you will all be pretty familiar with Java's idioms and quirks. I will be comparing rust to java to show how it forces you to write better code.
