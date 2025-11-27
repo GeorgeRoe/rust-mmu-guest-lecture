@@ -2,7 +2,7 @@
 theme: default
 title: Rust MMU Guest Lecture
 info: |
-  Presentation for Guest Lecture at MMU about rust, any why its so amazing
+  Presentation for Guest Lecture at MMU about Rust, any why its so amazing
 class: text-center
 drawings:
   persist: false
@@ -40,6 +40,7 @@ layout: center
 - Science and Technology Facilities Council
 - One of the nine councils under the management of UKRI (UK Research and Innovation)
 - Formed in 2007 when several separate organisations were merged
+- Government funded
 - Many sites with two main campuses:
   - DL - Daresbury Laboratory (Warrington)
   - RAL - Rutherford Appleton Laboratory (Near Oxford)
@@ -50,7 +51,7 @@ layout: center
 
 # Why Am I here?
 
-How come I use rust?
+How come I use Rust?
 
 GUILT - Green Usage Impact Logging Tool:
 
@@ -63,25 +64,25 @@ GUILT - Green Usage Impact Logging Tool:
 
 ---
 
-# Why did I pick rust?
+# Why did I pick Rust?
 
 - There are several different python versions you will find installed on HPCs, to make sure I was compatible I had to use an older version
-- Since the software needs to be portable, practically nothing can be taken for granted, which rust handles well
+- Since the software needs to be portable, practically nothing can be taken for granted, which Rust handles well
 - Distribution of a single binary is a lot easier than getting people to pip install
-- HPC login nodes should preferrably not have any large amount of work done on them, rust will reduce users impact on login node resources
+- HPC login nodes should preferrably not have any large amount of work done on them, Rust will reduce users impact on login node resources
 - I would rather catch errors with my code at compile time, rather than having my GitHub flooded with issues users found at runtime
 
 ---
 
 ## About this talk
 
-Given the popularity of Java with universities, I assume you will all be pretty familiar with Java's idioms and quirks. I will be comparing rust to java to show how it forces you to write better code.
+Given the popularity of Java with universities, I assume you will all be pretty familiar with Java's idioms and quirks. I will be comparing Rust to Java to show how it forces you to write better code.
 
 ### Why am I not comparing to C++?
 
-1. In my profession, C++ is often *better* than rust due to the large amount of libraries for distributed computation (SYCL) which often make use of lots of *"unsafe"* code, which makes using rust pointless
-2. I believe that rust is suited to the kind of projects you make in Java (e.g., backend systems, CLIs) so the comparison should be slightly more relevant
-3. Java is used pretty much everywhere, and lots of rust code is rewrites of other projects
+1. In my profession, C++ is often *better* than Rust due to the large amount of libraries for distributed computation (SYCL) which often make use of lots of *"unsafe"* code, which makes using Rust pointless
+2. I believe that Rust is suited to the kind of projects you make in Java (e.g., backend systems, CLIs) so the comparison should be slightly more relevant
+3. Java is used pretty much everywhere, and lots of Rust code is rewrites of other projects
 
 ---
 layout: center 
@@ -135,13 +136,13 @@ match status {
 }
 ```
 
-In rust, **invalid states are unrepresentable**.
+In Rust, **invalid states are unrepresentable**.
 
 ---
 layout: comparison
 ---
 
-## No Inhertiance
+## No Inheritance
 
 Inheritance (not subtyping) is a horrible anti pattern that forces developers into corners that never needed to exist. Rust gets rid of inheritance entirely, relying on traits and implementations instead.
 
@@ -163,7 +164,7 @@ class D extends B, C {
 }
 ```
 
-Although Java now has interfaces, inheritance is littered across the standard library (e.g., AWT/Swing).
+Although Java now has interfaces, inheritance is littered across the standard library (e.g., [AWT/Swing](https://www.cs.vu.nl/~eliens/afstuderen/media/@archive/online/archive/documents/java/swing/swingdoc-static/tool_set.html)).
 
 ::right::
 
@@ -243,7 +244,7 @@ cargo test
 cargo run
 ```
 
-I have never come across a rust project that isnt using vanilla cargo.
+I have never come across a Rust project that isnt using vanilla cargo.
 
 ---
 layout: center 
@@ -307,7 +308,7 @@ layout: comparison
 
 ## Nullability
 
-In rust `null` doesn't exist: if a value should be somewhere, it is, and it's impossible for it to not be.
+In Rust `null` doesn't exist: if a value should be somewhere, it is, and it's impossible for it to not be.
 
 ::left::
 
@@ -352,7 +353,7 @@ layout: comparison
 
 ## Results over Exceptions
 
-There are no exceptions in rust, instead functions return Results, which can be either `Ok` or any type to represent an error.
+There are no exceptions in Rust, instead functions return Results, which can be either `Ok` or any type to represent an error.
 
 ::left::
 
@@ -390,7 +391,7 @@ let n = match parse_int("abc") {
 };
 ```
 
-By adding errors to the return type it is more obvious what can and cannot fail. Just make sure to not be like Cloudflare and use `unwrap` in prod (rust equivalent of unchecked expections).
+By adding errors to the return type it is more obvious what can and cannot fail. Just make sure to not be like Cloudflare and use `unwrap` in prod (Rust equivalent of unchecked expections).
 
 ---
 layout: center 
@@ -545,7 +546,7 @@ flowchart TD
   B -->|Architecture independent| C
 ```
 
-The JVM is required to run java code, if your machine doesnt have a jvm you cannot run Java code. JIT and other performance enhancements are used to try and compete with compiled languages.
+The JVM is required to run Java code, if your machine doesnt have a jvm you cannot run Java code. JIT and other performance enhancements are used to try and compete with compiled languages.
 
 ::right::
 
@@ -611,11 +612,11 @@ layout: center
 
 ## Rust is loved
 
-11% of professional developers have done extensive rust development in the last year.
+11% of professional developers have done extensive Rust development in the last year.
 
 Cargo makes up 15.2% of embedded systems technologies used (nearly overtaking clang).
 
-Tauri, a popular rust alternative to Electron, represents 2.1% of "Other frameworks and libraries".
+Tauri, a popular Rust alternative to Electron, represents 2.1% of "Other frameworks and libraries".
 
 Rust is admired by 82% of all developers.
 
@@ -644,7 +645,7 @@ layout: comparison
 - Amazing documentation
 - Good guides, e.g., [The Rust Book](https://doc.rust-lang.org/book/)
 - Very active community
-- Once you know rust you can do lots of projects:
+- Once you know Rust you can do lots of projects:
   - Game development with [Bevy](https://bevy.org/)
   - CLI development with [Clap](https://docs.rs/clap/latest/clap/)
   - Desktop development with [Tauri](https://v2.tauri.app/)
