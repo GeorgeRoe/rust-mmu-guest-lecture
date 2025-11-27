@@ -391,7 +391,7 @@ let n = match parse_int("abc") {
 };
 ```
 
-By adding errors to the return type it is more obvious what can and cannot fail. Just make sure to not be like Cloudflare and use `unwrap` in prod (Rust equivalent of unchecked expections).
+By adding errors to the return type it is more obvious what can and cannot fail. Just make sure to not be like Cloudflare and use `unwrap` in prod (Rust equivalent of unchecked exceptions).
 
 ---
 layout: center 
