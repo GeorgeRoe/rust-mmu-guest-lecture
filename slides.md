@@ -12,7 +12,7 @@ layout: cover
 hideInToc: true
 ---
 
-![Ferris the rustacean](https://rustacean.net/assets/rustacean-flat-noshadow.svg){.h-[20vh].mx-auto}
+![Ferris the rustacean](https://rustacean.net/assets/rustacean-flat-noshadow.svg){.w-md.mx-auto}
 
 # Rust
 
@@ -59,7 +59,7 @@ GUILT - Green Usage Impact Logging Tool:
 - Any tracking is usually managed by admins, give users the ability to make the change themselves
 - Portable and works on any machine
 
-![GUILT repo](https://opengraph.githubassets.com/1/georgeroe/GUILT){.h-[20vh]}
+![GUILT repo](https://opengraph.githubassets.com/1/georgeroe/GUILT){.w-xs}
 
 ---
 
@@ -661,6 +661,6 @@ class: text-center
 
 Any Questions?
 
-![Slides repo](https://opengraph.githubassets.com/1/georgeroe/rust-mmu-guest-lecture){.h-[15vh].mx-auto}
+![Slides repo](https://opengraph.githubassets.com/1/georgeroe/rust-mmu-guest-lecture){.w-sm.mx-auto}
 
 https://georgeroe.github.io/rust-mmu-guest-lecture
