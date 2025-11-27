@@ -33,6 +33,8 @@ layout: center
   - STFC - Software Engineer at Scientific Computing Department
 - Completed my first year of my apprenticeship at a small web development company
 
+![Aerial shot of SciTech Daresbury](https://upload.wikimedia.org/wikipedia/commons/a/a1/DaresburyLaboratoryAerial.jpg){.w-sm}
+
 ---
 
 # What is STFC?
